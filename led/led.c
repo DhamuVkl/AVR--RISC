@@ -1,4 +1,4 @@
-#include <avr/io.h>
+#include<avr/io.h>
 #include <util/delay.h>
 
 int main(void)
@@ -11,10 +11,10 @@ int main(void)
 
         PORTB = PORTB | (1 << PORTB5);
 
-        _delay_ms(1000);
+        _delay_ms(50);
 
         PORTB = PORTB & ~(1 << PORTB5);
 
-        _delay_ms(100);
+        _delay_ms(50);
     }
 }
